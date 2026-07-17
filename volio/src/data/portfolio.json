@@ -1,0 +1,95 @@
+{
+  "profile": {
+    "name": "DANIYAL",
+    "role": "Web Developer • UI/UX Designer",
+    "tagline": "Halo, saya <span class=\"text-blue-600\">Daniyal.</span>",
+    "intro": "Saya membangun pengalaman web yang modern, cepat, dan enak dipandang — dari ide awal hingga antarmuka akhir.",
+    "availabilityTitle": "Kolaborasi proyek digital yang terasa premium.",
+    "availabilityBody": "Landing page, portofolio, dashboard, dan antarmuka yang tidak hanya indah, tetapi juga nyaman digunakan.",
+    "availabilityPoints": [
+      "Cepat dibangun dan ringan",
+      "Fokus pada estetika dan detail",
+      "Tampil prima di HP maupun desktop"
+    ],
+    "stats": [
+      { "value": "3+", "label": "Proyek siap tampil" },
+      { "value": "100%", "label": "Responsif & modern" }
+    ],
+    "email": "daniyal@example.com",
+    "copyright": "© 2026 Daniyal. Semua hak dilindungi.",
+    "socials": [
+      { "platform": "github", "url": "https://github.com/Ahmad-daniyal", "label": "GitHub" },
+      { "platform": "x", "url": "https://x.com/daniyal", "label": "X (Twitter)" },
+      { "platform": "linkedin", "url": "https://linkedin.com/in/daniyal", "label": "LinkedIn" },
+      { "platform": "instagram", "url": "https://instagram.com/daniyal_hmm", "label": "Instagram" }
+    ]
+  },
+  "profilePage": {
+    "title": "Profil",
+    "heading": "Mengenal lebih dekat tentang saya.",
+    "bio": "Saya adalah seorang web developer dan UI/UX designer yang berfokus pada pengalaman web yang modern, cepat, dan enak dipandang. Saya percaya bahwa desain yang baik bukan hanya soal tampilan, tetapi juga tentang bagaimana pengguna merasa saat menggunakannya.",
+    "location": "Indonesia",
+    "availableFor": "Freelance & Kolaborasi",
+    "highlights": [
+      { "icon": "code", "label": "Frontend Developer", "detail": "HTML, CSS, JavaScript, React, Vue, Vite" },
+      { "icon": "palette", "label": "UI/UX Designer", "detail": "Desain antarmuka yang bersih dan fokus pengguna" },
+      { "icon": "zap", "label": "Performance", "detail": "Optimasi kecepatan dan pengalaman yang ringan" },
+      { "icon": "heart", "label": "Passion", "detail": "Menciptakan web yang indah dan fungsional" }
+    ]
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "heading": "Membuat desain yang terasa bersih, fungsional, dan enak untuk dilihat.",
+    "body": "Saya suka menggabungkan logika teknis dengan estetika visual. Fokus utama saya adalah membangun antarmuka yang ringan, modern, dan mudah dipahami oleh pengguna dari perangkat apa pun.",
+    "offerTitle": "Apa yang saya tawarkan",
+    "offers": [
+      "Desain UI yang bersih dan profesional",
+      "Pengembangan frontend yang cepat dan responsif",
+      "Penyesuaian detail untuk pengalaman yang lebih premium"
+    ]
+  },
+  "skills": {
+    "title": "Keahlian",
+    "heading": "Area yang saya fokuskan untuk menghadirkan hasil terbaik.",
+    "items": [
+      { "title": "Frontend", "body": "HTML, CSS, JavaScript, React, Vue, dan Vite untuk pengalaman yang cepat dan modern." },
+      { "title": "UI/UX", "body": "Mendesain antarmuka yang bersih, konsisten, dan fokus pada kenyamanan pengguna." },
+      { "title": "Performance", "body": "Optimasi loading, struktur yang rapi, dan pengalaman yang ringan namun tetap elegan." }
+    ]
+  },
+  "projects": {
+    "title": "Proyek",
+    "heading": "Beberapa karya yang saya bangun dengan detail dan fokus pada pengalaman pengguna.",
+    "items": [
+      {
+        "title": "Landing Page Brand",
+        "description": "Desain landing page modern dengan fokus storytelling visual, konversi, dan pengalaman yang premium.",
+        "tags": ["UI Design", "Frontend", "Conversion"]
+      },
+      {
+        "title": "Dashboard Analitik",
+        "description": "Antarmuka dashboard yang rapi untuk memantau performa bisnis secara cepat dan intuitif.",
+        "tags": ["Web App", "Data", "UX"]
+      },
+      {
+        "title": "Portofolio Personal",
+        "description": "Website personal dengan nuansa profesional, minimalis, dan sangat nyaman dibaca di semua perangkat.",
+        "tags": ["Portfolio", "Responsive", "Tailwind"]
+      }
+    ]
+  },
+  "experiences": {
+    "title": "Pengalaman",
+    "heading": "Perjalanan yang terus berkembang dan memperkuat kualitas kerja saya.",
+    "items": [
+      { "year": "2024 — Sekarang", "title": "Freelance Web Developer", "body": "Membangun landing page, portofolio, dan antarmuka digital untuk klien dengan kebutuhan visual yang kuat." },
+      { "year": "2023 — 2024", "title": "UI/UX Exploration", "body": "Mengasah desain antarmuka, sistem visual, dan pengalaman pengguna melalui berbagai latihan dan proyek kecil." }
+    ]
+  },
+  "contact": {
+    "title": "Kontak",
+    "heading": "Siap berkolaborasi untuk ide berikutnya?",
+    "body": "Jika Anda ingin membangun website yang modern, rapi, dan terasa personal, saya siap membantu mewujudkannya.",
+    "cta": "Kirim Email"
+  }
+}

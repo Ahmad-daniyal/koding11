@@ -1,0 +1,21 @@
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  color: #64748b;
+  transition: all 0.2s ease;
+}
+
+.social-link:hover {
+  color: #2563eb;
+  background: #eff6ff;
+  transform: translateY(-2px);
+}
