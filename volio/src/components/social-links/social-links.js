@@ -24,7 +24,7 @@ export function SocialLinks(socials, { size = 20, className = '' } = {}) {
     .map(
       (s) => `
       <a href="${s.url}" target="_blank" rel="noopener noreferrer"
-         class="social-link" aria-label="${s.label}" title="${s.label}">
+         class="social-link border-2 border-black" aria-label="${s.label}" title="${s.label}">
         ${iconSVG(s.platform, size)}
       </a>`
     )
@@ -33,7 +33,7 @@ export function SocialLinks(socials, { size = 20, className = '' } = {}) {
   return container
 }
 
-export function SocialLinksInline(socials, { size = 18, gap = 'gap-3', color = 'text-slate-400', hoverColor = 'hover:text-white' } = {}) {
+export function SocialLinksInline(socials, { size = 18, gap = 'gap-3', color = 'text-black/40', hoverColor = 'hover:text-black' } = {}) {
   const wrapper = document.createElement('div')
   wrapper.className = `flex items-center ${gap}`
 

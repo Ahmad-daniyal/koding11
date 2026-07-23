@@ -5,13 +5,13 @@ export function ContactSection(profile, contact) {
   const section = document.createElement('section')
   section.id = 'contact'
   section.className =
-    'reveal rounded-[28px] border border-slate-200 bg-slate-950 p-8 text-center text-white shadow-[0_20px_60px_rgba(15,23,42,0.08)] sm:p-10'
+    'reveal border-2 border-black bg-brutal-blue p-6 text-center text-black shadow-[6px_6px_0px_0px_#000] sm:p-10'
   section.innerHTML = `
-    <p class="text-sm font-semibold uppercase tracking-[0.3em] text-slate-400">${contact.title}</p>
-    <h2 class="mt-3 text-3xl font-semibold">${contact.heading}</h2>
-    <p class="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-300">${contact.body}</p>
-    <div class="mt-6 flex flex-col items-center gap-4">
-      <a href="mailto:${profile.email}" class="inline-flex rounded-full border border-white/20 px-5 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-950">${contact.cta}</a>
+    <span class="inline-block border-2 border-white/30 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">${contact.title}</span>
+    <h2 class="mt-4 text-3xl font-bold text-white">${contact.heading}</h2>
+    <p class="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/80">${contact.body}</p>
+    <div class="mt-8 flex flex-col items-center gap-4">
+      <a href="mailto:${profile.email}" class="brutal-btn inline-block border-2 border-black bg-brutal-yellow px-6 py-3 font-bold text-black">${contact.cta}</a>
       <div id="contact-social-links"></div>
     </div>
   `
@@ -19,7 +19,7 @@ export function ContactSection(profile, contact) {
   requestAnimationFrame(() => {
     const slot = section.querySelector('#contact-social-links')
     if (slot && profile.socials) {
-      slot.replaceWith(SocialLinksInline(profile.socials, { size: 20, gap: 'gap-4', color: 'text-slate-500', hoverColor: 'text-white' }))
+      slot.replaceWith(SocialLinksInline(profile.socials, { size: 20, gap: 'gap-4', color: 'text-white/50', hoverColor: 'text-white' }))
     }
   })
 

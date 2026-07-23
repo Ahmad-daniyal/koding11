@@ -7,15 +7,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 9999px;
-  color: #64748b;
-  transition: all 0.2s ease;
+  width: 44px;
+  height: 44px;
+  color: #000;
+  background: #fff;
+  transition: all 0.1s ease;
+  box-shadow: 3px 3px 0px 0px #000;
 }
 
 .social-link:hover {
-  color: #2563eb;
-  background: #eff6ff;
-  transform: translateY(-2px);
+  color: #000;
+  background: #FFD600;
+  box-shadow: 1px 1px 0px 0px #000;
+  transform: translate(2px, 2px);
 }

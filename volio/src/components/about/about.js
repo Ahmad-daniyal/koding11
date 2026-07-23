@@ -2,23 +2,23 @@ import './about.css'
 
 export function AboutSection(about) {
   const offers = about.offers
-    .map((offer) => `<li>• ${offer}</li>`)
+    .map((offer) => `<li class="flex items-start gap-2"><span class="mt-0.5 inline-block h-2 w-2 shrink-0 border border-black bg-brutal-yellow"></span>${offer}</li>`)
     .join('')
 
   const section = document.createElement('section')
   section.id = 'about'
   section.className =
-    'reveal rounded-[28px] border border-slate-200 bg-white p-8 shadow-[0_15px_40px_rgba(15,23,42,0.05)] sm:p-10'
+    'reveal border-2 border-black bg-white p-6 shadow-[6px_6px_0px_0px_#000] sm:p-10'
   section.innerHTML = `
     <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">${about.title}</p>
-        <h2 class="mt-3 text-3xl font-semibold text-slate-900">${about.heading}</h2>
-        <p class="mt-4 text-lg text-slate-600">${about.body}</p>
+        <span class="inline-block border-2 border-black bg-brutal-orange px-3 py-1 text-xs font-bold uppercase tracking-wider text-black">${about.title}</span>
+        <h2 class="mt-4 text-3xl font-bold text-black">${about.heading}</h2>
+        <p class="mt-4 text-lg text-black/70">${about.body}</p>
       </div>
-      <div class="rounded-[24px] border border-slate-200 bg-slate-50 p-6">
-        <h3 class="text-lg font-semibold text-slate-900">${about.offerTitle}</h3>
-        <ul class="mt-4 space-y-3 text-sm text-slate-600">
+      <div class="border-2 border-black bg-brutal-yellow p-6">
+        <h3 class="text-lg font-bold text-black">${about.offerTitle}</h3>
+        <ul class="mt-4 space-y-3 text-sm font-medium text-black/80">
           ${offers}
         </ul>
       </div>

@@ -16,17 +16,17 @@ export function HeaderSection(profile) {
   const navLinks = navItems
     .map((item) => {
       const isActive = currentPath === item.path
-      return `<a href="#${item.path}" class="nav-link rounded-full px-3 py-2 transition ${isActive ? 'bg-blue-50 text-blue-600 font-semibold' : 'text-slate-600 hover:bg-blue-50 hover:text-blue-600'}">${item.label}</a>`
+      return `<a href="#${item.path}" class="nav-link border-2 border-black px-4 py-2 font-bold transition ${isActive ? 'bg-brutal-yellow text-black' : 'bg-white text-black hover:bg-brutal-yellow'}">${item.label}</a>`
     })
     .join('')
 
   const header = document.createElement('header')
   header.className =
-    'sticky top-0 z-50 border-b border-slate-200/70 bg-slate-50/80 backdrop-blur-xl'
+    'sticky top-0 z-50 border-b-2 border-black bg-brutal-yellow'
   header.innerHTML = `
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-      <a href="#/home" class="text-lg font-semibold tracking-[0.3em] text-slate-900">${profile.name}</a>
-      <div class="flex items-center gap-2 text-sm font-medium sm:gap-4">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#/home" class="text-lg font-bold tracking-tight text-black">${profile.name}</a>
+      <div class="flex items-center gap-2 text-sm font-bold sm:gap-3">
         ${navLinks}
       </div>
     </nav>
@@ -36,10 +36,8 @@ export function HeaderSection(profile) {
     header.querySelectorAll('.nav-link').forEach((link) => {
       const linkPath = link.getAttribute('href').slice(1)
       const isActive = linkPath === path
-      link.classList.toggle('bg-blue-50', isActive)
-      link.classList.toggle('text-blue-600', isActive)
-      link.classList.toggle('font-semibold', isActive)
-      link.classList.toggle('text-slate-600', !isActive)
+      link.classList.toggle('bg-brutal-yellow', isActive)
+      link.classList.toggle('bg-white', !isActive)
     })
   }
 
