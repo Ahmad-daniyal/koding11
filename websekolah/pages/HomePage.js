@@ -1,0 +1,19 @@
+import { Component } from "../components/component.js";
+import { Navbar } from "../components/navbar.js";
+import { Footer } from "../components/footer.js";
+
+export class HomePage extends Component {
+  render() {
+    const navbar = new Navbar({ activePage: "home" }).render();
+    const footer = new Footer().render();
+    
+    return `    
+${navbar}
+<main>
+<h1>Selamat Datang di SMA Negeri Harapan Bangsa</h1>
+<p>welkom</p>
+</main>
+${footer}
+`;
+  }
+}
