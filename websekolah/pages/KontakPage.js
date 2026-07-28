@@ -4,8 +4,8 @@ import { Footer } from "../components/footer.js";
 
 export class KontakPage extends Component {
   render() {
-    const navbar = new Navbar({ activePage: "kontak" }).render();
-    const footer = new Footer().render();
+    const navbar = new Navbar({ activePage: "kontak", schoolName: this.props.schoolName }).render();
+    const footer = new Footer({ schoolName: this.props.schoolName }).render();
 
     return `
 ${navbar}

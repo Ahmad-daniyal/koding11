@@ -1,4 +1,6 @@
 import { router } from "./router.js";
 
-window.addEventListener("hashchange", router);
-window.addEventListener("DOMContentLoaded", router);
+const schoolName = "SMK Yadika banjaran";
+
+window.addEventListener("hashchange", () => router(schoolName));
+window.addEventListener("DOMContentLoaded", () => router(schoolName));

@@ -12,7 +12,7 @@ const routes =
     "/kontak": KontakPage,
 }
 
-export function router() {
+export function router(schoolName) {
     let path = window.location.hash.replace("#", "") || "/home";
     
     if (path === "/") {
@@ -21,6 +21,6 @@ export function router() {
     
     const PageClass = routes[path] || HomePage;
 
-    const page = new PageClass();
+    const page = new PageClass({ schoolName });
     document.getElementById("app").innerHTML = page.render();
 }
