@@ -14,6 +14,7 @@ ${navbar}
 <p>welkom</p>
  <p>jadi disini kita lagi bikin website turorial guys, <br> ceritanyamah initeh website sekolah snh jadi stay toon terus ya buta perkembangan nya ges
  </P>
+
 </main>
 ${footer}
 `;
