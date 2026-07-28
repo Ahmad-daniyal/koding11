@@ -10,8 +10,8 @@ export class AboutPage extends Component {
         return `   
 ${navbar}
 <main>
-<h1>Tentang SMA Negeri Harapan Bangsa</h1>
-<p>SMA Negeri Harapan Bangsa adalah sekolah menengah atas yang berfokus pada pendidikan berkualitas dan pengembangan karakter siswa.</p>
+<h1>Tentang SMK Yadika konoha</h1>
+<p>SMK Yadika konoha adalah sekolah menengah kejuruan yang berfokus pada <BR>pendidikan berkualitas dan pengembangan karakter siswa.</p>
 </main>
 
 ${footer}
