@@ -2,6 +2,7 @@
 </script>
 
 <template>
+  <h1>SMK yadika soreang</h1>
   <nav class="navbar">
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/product">Product</RouterLink>
