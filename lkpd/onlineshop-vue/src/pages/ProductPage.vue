@@ -1,26 +1,14 @@
 <script setup>
 import ProductCard from '../components/ProductCard.vue'
 
-const productImages = import.meta.glob('../assets/images/products/*', {
-  eager: true,
-  import: 'default',
-})
-
-function getProductImage(key) {
-  const match = Object.entries(productImages).find(([path]) =>
-    path.includes(`/${key}.`),
-  )
-  return match ? match[1] : undefined
-}
-
 const products = [
-  { name: 'Laptop Acer Aspire 5', price: 'Rp 8.500.000', image: 'images.jpg' },
-  { name: 'Laptop Lenovo Ideapad 3', price: 'Rp 7.200.000', image: 'untitled.jpg' },
-  { name: 'Laptop Asus VivoBook 14', price: 'Rp 9.100.000', image: 'asus.jpg' },
-  { name: 'Laptop HP Pavilion 15', price: 'Rp 11.500.000', image: 'hp.jpg' },
-  { name: 'Laptop Dell Inspiron 15', price: 'Rp 10.200.000', image: 'dell.jpg' },
-  { name: 'Laptop MacBook Air M2', price: 'Rp 16.900.000', image: 'mac.jpg' },
-].map((product) => ({ ...product, image: getProductImage(product.image) }))
+  { name: 'Laptop Acer Aspire 5', price: 'Rp 8.500.000', image: '/images/products/images.jpg' },
+  { name: 'Laptop Lenovo Ideapad 3', price: 'Rp 7.200.000', image: '/images/products/untitled.jpg' },
+  { name: 'Laptop Asus VivoBook 14', price: 'Rp 9.100.000', image: '/images/products/asus.jpg' },
+  { name: 'Laptop HP Pavilion 15', price: 'Rp 11.500.000', image: '/images/products/hp.jpg' },
+  { name: 'Laptop Dell Inspiron 15', price: 'Rp 10.200.000', image: '/images/products/dell.jpg' },
+  { name: 'Laptop MacBook Air M2', price: 'Rp 16.900.000', image: '/images/products/mac.jpg' },
+]
 </script>
 
 <template>
