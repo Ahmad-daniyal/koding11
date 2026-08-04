@@ -26,6 +26,8 @@ const team = [
         </p>
       </div>
       <div class="story-image" aria-label="Placeholder gambar toko"></div>
+      <div class="story-image" aria-label="Placeholder gambar toko"></div>
+      <div class="story-image" aria-label="Placeholder gambar toko"></div>
     </section>
 
     <section class="team-section">
