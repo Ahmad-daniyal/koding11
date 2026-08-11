@@ -1,6 +1,10 @@
 <script setup>
 import TeamCard from '../components/TeamCard.vue'
 
+function imagePath(stem) {
+  return `/images/team/${stem}.jpg`
+}
+
 const team = [
   { name: 'Budi Santoso', role: 'CEO & Founder' },
   { name: 'Siti Rahayu', role: 'Chief Technology Officer' },
@@ -25,9 +29,9 @@ const team = [
           bertumbuh bersama komunitas kami.
         </p>
       </div>
-      <div class="story-image" aria-label="Placeholder gambar toko"></div>
-      <div class="story-image" aria-label="Placeholder gambar toko"></div>
-      <div class="story-image" aria-label="Placeholder gambar toko"></div>
+      <div class="story-image" aria-label="Placeholder gambar toko"><img :src="imagePath('2')" alt="Budi Santoso"></div>
+      <div class="story-image" aria-label="Placeholder gambar toko"><img :src="imagePath('images')" alt="Siti Rahayu"></div>
+      <div class="story-image" aria-label="Placeholder gambar toko"><img :src="imagePath('3')" alt="Agus Wijaya"></div>
     </section>
 
     <section class="team-section">
@@ -66,6 +70,13 @@ const team = [
   height: 300px;
   border-radius: var(--border-radius);
   background-color: var(--color-muted);
+  overflow: hidden;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team-section h2 {

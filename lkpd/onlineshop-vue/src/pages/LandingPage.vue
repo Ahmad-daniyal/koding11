@@ -12,7 +12,7 @@ const features = [
       <h1>Selamat Datang di OnlineShop</h1>
       <p>Temukan produk berkualitas dengan harga terbaik.</p>
       <section class="promo">
-        <h2>Video Promosi</h2>
+
         <video controls class="promo-video" src="/video/contoh.mp4"></video>
       </section>
       <RouterLink to="/product" class="hero-button">Lihat Produk</RouterLink>
