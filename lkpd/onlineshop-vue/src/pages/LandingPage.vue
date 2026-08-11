@@ -11,11 +11,11 @@ const features = [
     <section class="hero">
       <h1>Selamat Datang di OnlineShop</h1>
       <p>Temukan produk berkualitas dengan harga terbaik.</p>
-      <section class="promo">
-
-        <video controls class="promo-video" src="/video/contoh.mp4"></video>
-      </section>
       <RouterLink to="/product" class="hero-button">Lihat Produk</RouterLink>
+    </section>
+    <section class="promo">
+
+      <video controls autoplay playsinline class="promo-video" src="/video/rusdi.mp4"></video>
     </section>
     
     
@@ -104,5 +104,6 @@ const features = [
   width: 720px;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 500px;
 }
 </style>

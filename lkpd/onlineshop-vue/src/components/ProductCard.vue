@@ -1,14 +1,14 @@
 <script setup>
 import { ref } from 'vue'
 
-defineProps({
+const props = defineProps({
   product: {
     type: Object,
     required: true,
   },
 })
 
-const audio = new Audio('/audio/success.mp3')
+const audio = new Audio(props.product.audio || '/audio/success.mp3')
 const showZoom = ref(false)
 
 function addToCart() {

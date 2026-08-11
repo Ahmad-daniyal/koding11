@@ -12,6 +12,7 @@ const products = [
   { name: 'Laptop HP Pavilion 15', price: 'Rp 11.500.000', image: 'hp' },
   { name: 'Laptop Dell Inspiron 15', price: 'Rp 10.200.000', image: 'dell' },
   { name: 'Laptop MacBook Air M2', price: 'Rp 16.900.000', image: 'mac' },
+  { name: 'recal', price: 'tas tas', image: 'tas', audio: '/audio/tas.mp3' },
 ].map((product) => ({ ...product, image: imagePath(product.image) }))
 </script>
 
