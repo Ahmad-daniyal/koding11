@@ -11,9 +11,14 @@ const features = [
     <section class="hero">
       <h1>Selamat Datang di OnlineShop</h1>
       <p>Temukan produk berkualitas dengan harga terbaik.</p>
+      <section class="promo">
+        <h2>Video Promosi</h2>
+        <video controls class="promo-video" src="/video/contoh.mp4"></video>
+      </section>
       <RouterLink to="/product" class="hero-button">Lihat Produk</RouterLink>
     </section>
-
+    
+    
     <section class="features">
       <div v-for="feature in features" :key="feature.title" class="feature-card">
         <h3>{{ feature.title }}</h3>
@@ -82,5 +87,22 @@ const features = [
 
 .feature-card h3 {
   margin-bottom: var(--spacing-sm);
+}
+
+.promo {
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.promo h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.promo-video {
+  max-width: 100%;
+  width: 720px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 </style>
