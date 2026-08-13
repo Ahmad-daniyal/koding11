@@ -18,7 +18,10 @@ const products = [
 
 <template>
   <main class="product-page">
-    <h1>Product Page</h1>
+    
+    <div class="produk">
+      <h1>Product Page</h1>
+    </div>
     <div class="product-grid">
       <ProductCard v-for="product in products" :key="product.name" :product="product" />
     </div>
@@ -26,6 +29,25 @@ const products = [
 </template>
 
 <style scoped>
+
+.produk
+ {
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-radius:50px;
+  height:auto 100px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+}
+
 .product-page {
   max-width: var(--container-width);
   margin: 0 auto;

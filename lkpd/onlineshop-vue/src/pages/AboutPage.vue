@@ -15,7 +15,10 @@ const team = [
 
 <template>
   <main class="about-page">
+    <div class="cerita">
     <h1>About Page</h1>
+  </div>
+
 
     <section class="story-section">
       <div class="story-text">
@@ -44,6 +47,25 @@ const team = [
 </template>
 
 <style scoped>
+
+.cerita
+ {
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-radius:50px;
+  height:auto 100px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+}
+
 .about-page {
   max-width: var(--container-width);
   margin: 0 auto;

@@ -3,7 +3,10 @@
 
 <template>
   <main class="contact-page">
-    <h1>Contact Page</h1>
+    
+    <div class="hubungi">
+      <h1>hubungi kami</h1>
+    </div>
 
     <section class="contact-section">
       <div class="contact-info">
@@ -35,6 +38,24 @@
 </template>
 
 <style scoped>
+
+.hubungi {
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-radius:50px;
+  height:auto 100px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+}
+
 .contact-page {
   max-width: var(--container-width);
   margin: 0 auto;
